@@ -365,8 +365,9 @@ tableHead = function(names, type = c('head', 'foot'), escape = TRUE, ...) {
 
 #' @importFrom htmltools tagList
 filterRow = function(
-  data, rownames = TRUE,
-  filter = list(position = 'none', clear = TRUE, plain = FALSE)
+  data,
+  rownames = TRUE,
+  filter
 ) {
   if (filter$position == 'none') return()
   tds = list()
